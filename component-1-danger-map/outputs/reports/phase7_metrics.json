@@ -1,0 +1,110 @@
+{
+  "cv_folds": [
+    {
+      "fold": 1,
+      "auc": 0.8308893170906952,
+      "average_precision": 0.3693216816712593,
+      "tss_youden": 0.581599660341618,
+      "threshold": 0.1771296262741089,
+      "n_test": 524
+    },
+    {
+      "fold": 2,
+      "auc": 0.8922594142259413,
+      "average_precision": 0.43508177872149045,
+      "tss_youden": 0.7302164817173002,
+      "threshold": 0.17002661526203156,
+      "n_test": 524
+    },
+    {
+      "fold": 3,
+      "auc": 0.7947892271662764,
+      "average_precision": 0.276835233849729,
+      "tss_youden": 0.49660421545667455,
+      "threshold": 0.045205362141132355,
+      "n_test": 523
+    },
+    {
+      "fold": 4,
+      "auc": 0.8292317362084803,
+      "average_precision": 0.2752030959837898,
+      "tss_youden": 0.5533046463279021,
+      "threshold": 0.17980685830116272,
+      "n_test": 524
+    },
+    {
+      "fold": 5,
+      "auc": 0.8589755050956552,
+      "average_precision": 0.37601711968315,
+      "tss_youden": 0.6144734489540498,
+      "threshold": 0.059061095118522644,
+      "n_test": 523
+    }
+  ],
+  "cv_mean_auc": 0.8412290399574098,
+  "cv_std_auc": 0.036491565810367124,
+  "cv_mean_tss": 0.595239690559509,
+  "oof": {
+    "oof_auc": 0.8504784266647836,
+    "oof_ap": 0.33161386105961255,
+    "oof_tss_youden": 0.5651260504201681,
+    "oof_threshold": 0.16639502346515656
+  },
+  "sanity": {
+    "deep_interior_forest": {
+      "n": 7854,
+      "mean_risk": 0.0026744301355423826,
+      "median_risk": 0.00028233838185187833,
+      "p90_risk": 0.005001032697485309
+    },
+    "all_forest_edge": {
+      "n": 9665,
+      "mean_risk": 0.04444254549074223,
+      "median_risk": 0.009345013184294555,
+      "p90_risk": 0.13211692845316675
+    },
+    "farm_forest_edge": {
+      "n": 7749,
+      "mean_risk": 0.048668522212576344,
+      "median_risk": 0.010400379065964473,
+      "p90_risk": 0.14624620791609544
+    },
+    "pass_edge_gt_deep": true,
+    "protected_far_from_settlement": {
+      "n": 3308,
+      "mean_risk": 0.002079730403419961,
+      "median_risk": 0.0006367451883431657,
+      "p90_risk": 0.004050970792539268
+    },
+    "near_settlement": {
+      "n": 3333,
+      "mean_risk": 0.03767212450522085,
+      "median_risk": 0.00844315905539218,
+      "p90_risk": 0.10568608157365292
+    },
+    "pass_settle_gt_prot_far": true
+  },
+  "literature_proxy": {
+    "n_high_risk_p90": 2882,
+    "forest_edge_rate_high": 0.6145038167938931,
+    "forest_edge_rate_rest": 0.304376325428957,
+    "mean_frac_crop_high": 0.2996423289926658,
+    "mean_frac_crop_rest": 0.14213588843904634,
+    "mean_dist_settlement_high": 1908.6075783575338,
+    "mean_dist_settlement_rest": 4046.957171403472,
+    "protected_rate_high": 0.007286606523247745,
+    "protected_rate_rest": 0.13765182186234817,
+    "pass_edge_enriched": true,
+    "pass_crop_enriched": true,
+    "pass_closer_settlements": true,
+    "literature_note": "Published Sri Lankan HEC work (e.g. Fernando and co-authors) emphasises conflict at Dry Zone forest\u2013agriculture interfaces and around protected-area edges, not in deep uninhabited forest. Anuradhapura lies in that Dry Zone pattern. This project does not re-digitise restricted incident coordinates; instead we test whether our open-data risk surface is enriched for the same structural setting (forest edge, cropland, nearer settlements)."
+  },
+  "sensitivity": {
+    "spearman_risk": 0.7862923858407337,
+    "top10_jaccard": 0.6586067933218193,
+    "mean_abs_delta": 0.009073399093042951,
+    "mean_delta": 0.008001946761708211,
+    "note": "Removing population softens risk in dense villages but keeps farm/forest-edge structure via cropland and built-up. High Spearman / Jaccard \u21d2 map is not driven by population alone."
+  },
+  "overall_pass": true
+}

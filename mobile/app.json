@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Gajasaviya",
+    "slug": "gajasaviya-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/gajasaviya_logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/gajasaviya_logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D2818"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0D2818",
+        "foregroundImage": "./assets/gajasaviya_logo.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/gajasaviya_logo.png"
+    }
+  }
+}

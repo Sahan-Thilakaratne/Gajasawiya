@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f3efe6;
+  --foreground: #1c1917;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.font-serif,
+h1,
+h2 {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.leaflet-container {
+  font: inherit;
+}

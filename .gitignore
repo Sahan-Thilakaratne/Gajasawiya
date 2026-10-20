@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.env
+.env.local
+
+# Build / local caches (regenerable)
+frontend/.next/
+mobile/.expo/
+**/outputs/api_cache/
+
+# Superseded trees and bulk backup archives
+_old_archive/
+*.zip
+!**/outputs/colab_packs/*.zip

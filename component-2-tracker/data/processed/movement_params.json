@@ -1,0 +1,17 @@
+{
+  "source": "movebank_fitted",
+  "note": "Fitted from Movebank Kruger elephant GPS (CC0). Statistics transferred to Anuradhapura simulation \u2014 NOT Sri Lankan DWC data.",
+  "citation_doi": "10.5441/001/1.403h24q5/1",
+  "study_name": "ThermochronTracking Elephants Kruger 2007",
+  "mean_speed_m_s": 0.1256,
+  "speed_std_m_s": 0.1402,
+  "min_speed_m_s": 0.0377,
+  "max_speed_m_s": 0.4571,
+  "turning_kappa": 1.719,
+  "rest_probability": 0.4074,
+  "dt_minutes_reference": 15,
+  "fit_n_steps": 265234,
+  "fit_n_moving": 157168,
+  "fit_n_animals": 14,
+  "fit_median_dt_min": 30.0
+}

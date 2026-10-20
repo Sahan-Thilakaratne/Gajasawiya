@@ -1,0 +1,75 @@
+explanation,n_cells
+farm + forest edge,6516
+tree cover,5849
+near water + tree cover,3125
+tree cover + protected area,1678
+farm + village + forest edge,1233
+tree cover + protected area + elephant habitat likely,1052
+lower overlap of elephants and people,983
+farm near water,933
+tree cover + elephant habitat likely,845
+farm + people / crops present,828
+near water + tree cover + protected area,498
+forest edge + tree cover,491
+forest edge + near water + tree cover,428
+village nearby + near water + tree cover,412
+village + forest edge,394
+near water + tree cover + people / crops present,330
+near water + tree cover + protected area + elephant habitat likely,315
+village nearby + tree cover,281
+near water,281
+village nearby + near water + tree cover + people / crops present,259
+farm,240
+near water + tree cover + elephant habitat likely,222
+tree cover + people / crops present,194
+forest edge,149
+village nearby + tree cover + people / crops present,119
+village nearby,111
+forest edge + near water + tree cover + people / crops present,101
+forest edge + near water,96
+built-up + village nearby + near water + tree cover,82
+forest edge + tree cover + people / crops present,77
+farm + village nearby + people / crops present,74
+forest edge + tree cover + elephant habitat likely,70
+village nearby + tree cover + elephant habitat likely,68
+built-up + near water + tree cover + people / crops present,53
+forest edge + built-up + near water + tree cover,43
+village nearby + near water + tree cover + elephant habitat likely,43
+farm + people / crops present + elephant habitat likely,36
+village nearby + near water,36
+elephant habitat likely,33
+built-up + village nearby + tree cover + people / crops present,26
+forest edge + near water + tree cover + elephant habitat likely,23
+settlement / farm next to protected area,22
+built-up + tree cover + people / crops present,15
+forest edge + built-up + tree cover + people / crops present,14
+tree cover + people / crops present + elephant habitat likely,14
+village nearby + people / crops present,12
+farm + village nearby,11
+forest edge + elephant habitat likely,8
+built-up + near water + tree cover,8
+near water + elephant habitat likely,7
+near water + tree cover + people / crops present + elephant habitat likely,7
+people / crops present,7
+forest edge + near water + people / crops present,7
+built-up + tree cover,6
+near water + people / crops present,6
+village nearby + elephant habitat likely,6
+farm + elephant habitat likely,5
+forest edge + tree cover + protected area + elephant habitat likely,4
+forest edge + tree cover + people / crops present + elephant habitat likely,4
+protected area + elephant habitat likely,4
+forest edge + people / crops present,3
+built-up + village nearby,3
+built-up + village nearby + tree cover,3
+village nearby + tree cover + people / crops present + elephant habitat likely,3
+village nearby + near water + people / crops present,2
+forest edge + near water + tree cover + protected area,1
+near water + protected area,1
+forest edge + near water + elephant habitat likely,1
+forest edge + near water + protected area,1
+near water + protected area + people / crops present,1
+built-up + people / crops present + elephant habitat likely,1
+built-up + tree cover + elephant habitat likely,1
+forest edge + people / crops present + elephant habitat likely,1
+farm + built-up + people / crops present,1

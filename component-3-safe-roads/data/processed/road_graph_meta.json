@@ -1,0 +1,38 @@
+{
+  "district": "Anuradhapura",
+  "crs": "EPSG:5234",
+  "max_segment_m": 400.0,
+  "node_round_m": 5.0,
+  "keep_highway": [
+    "living_street",
+    "motorway",
+    "motorway_link",
+    "primary",
+    "primary_link",
+    "residential",
+    "road",
+    "secondary",
+    "secondary_link",
+    "tertiary",
+    "tertiary_link",
+    "trunk",
+    "trunk_link",
+    "unclassified"
+  ],
+  "stats": {
+    "n_components": 424,
+    "largest_nodes": 293061,
+    "largest_edges": 302937,
+    "total_nodes": 299206,
+    "total_edges": 308693
+  },
+  "n_ml_segments": 55358,
+  "files": {
+    "nodes": "road_nodes.parquet",
+    "routing_edges": "road_edges.parquet",
+    "ml_segments": "road_segments.parquet",
+    "graph": "road_graph.gpickle",
+    "geojson": "road_segments.geojson"
+  },
+  "note": "Routing uses road_edges (micro); ML dataset uses road_segments (chopped)."
+}

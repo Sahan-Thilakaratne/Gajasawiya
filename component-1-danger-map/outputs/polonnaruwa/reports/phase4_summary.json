@@ -1,0 +1,33 @@
+{
+  "district": "Polonnaruwa",
+  "n_train": 7458,
+  "n_presence": 678,
+  "n_background": 6780,
+  "n_grid_cells": 13756,
+  "features": [
+    "frac_tree",
+    "frac_crop",
+    "frac_built",
+    "frac_water",
+    "frac_shrub_grass",
+    "elevation_m",
+    "slope_deg",
+    "temp_c",
+    "precip_mm",
+    "pop_mean",
+    "pop_density_approx",
+    "dist_road_m",
+    "dist_water_m",
+    "dist_settlement_m",
+    "protected",
+    "forest_edge"
+  ],
+  "spatial_block_cells": 20,
+  "cv_mean_auc": 0.8446846993261623,
+  "cv_std_auc": 0.015715463451625344,
+  "oof_auc": 0.8485115862200991,
+  "oof_ap": 0.31309417491659186,
+  "risk_formula": "habitat_suitability * human_exposure_normalized",
+  "train_mode": "pooled_anuradhapura_plus_polonnaruwa",
+  "scored_grid": "polonnaruwa"
+}

@@ -1,0 +1,21 @@
+[
+  "length_m",
+  "risk_mean",
+  "risk_max",
+  "habitat_suitability",
+  "human_exposure",
+  "frac_tree",
+  "frac_crop",
+  "frac_built",
+  "forest_edge",
+  "dist_settlement_m",
+  "dist_water_m",
+  "dist_road_m",
+  "pop_density_approx",
+  "elevation_m",
+  "highway_code",
+  "hour_of_day",
+  "diurnal_activity",
+  "elephant_dist_m",
+  "elephant_circle_overlap"
+]

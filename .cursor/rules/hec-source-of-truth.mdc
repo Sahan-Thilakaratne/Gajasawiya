@@ -1,0 +1,46 @@
+---
+description: HEC Ali source of truth — use promoted New Changes layout only
+alwaysApply: true
+---
+
+# HEC Ali — project source of truth
+
+The former `New Changes` tree is now the **repo root**. Do **not** develop against or restore `_old_archive/`.
+
+## Layout (edit these)
+
+| Path | Role |
+|------|------|
+| `frontend/` | Next.js UI (`npm run dev` → :3000) |
+| `component-1-danger-map/` | Comp-1 danger map API (:8003) |
+| `component-2-tracker/` | Comp-2 sparse tracker API (:8001) |
+| `component-3-safe-roads/` | Comp-3 local roads API (:8002) |
+| `auth-service/` | Auth API (:8005) |
+| `Component 4/.../backend/` | Path-Guard Node API (:5001) |
+| `Component 4/.../ml-microservice/` | Path-Guard ML (:8004) |
+| `run_servers.py` | Start all APIs from one shared root `.venv` |
+| `requirements.txt` | Shared Python deps for Comp-1–3 + Comp-4 ML |
+
+## Do not use
+
+- `_old_archive/` — superseded old Comp-1/2/3/frontend/Component 4 copies
+- Any leftover `New Changes/` folder if present
+- Port **8000** for Comp-1 (often taken); Comp-1 is **8003**
+
+## Environment
+
+```powershell
+cd c:\Sysconex\Ali
+.\.venv\Scripts\activate
+pip install -r requirements.txt
+python run_servers.py
+
+cd frontend
+npm run dev
+```
+
+Comp-4 Node (once): `npm install` inside `Component 4\R26-IT-136-IT22544636_Path_Guard\R26-IT-136-IT22544636_Path_Guard\backend`.
+
+## Development rule
+
+All further HEC work (features, fixes, APIs, UI) happens in the layout above. Ignore `_old_archive` unless the user explicitly asks to recover something from it.

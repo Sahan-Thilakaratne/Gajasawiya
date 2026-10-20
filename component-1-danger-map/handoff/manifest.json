@@ -1,0 +1,57 @@
+{
+  "component": 1,
+  "name": "HEC danger / overlap risk map",
+  "date": "2026-08-24",
+  "district": "Anuradhapura",
+  "grid_resolution_m": 500,
+  "crs_projected": "EPSG:5234",
+  "crs_geographic": "EPSG:4326",
+  "n_cells": 28817,
+  "risk_formula": "habitat_suitability * human_exposure",
+  "schema": {
+    "cell_id": "string \u2014 unique 500 m cell id",
+    "ix / iy": "integer grid indices (see feature_grid_meta.json)",
+    "cx / cy": "cell centroid metres in EPSG:5234",
+    "risk_score": "float 0\u20131 \u2014 habitat_suitability \u00d7 human_exposure (use this for routing cost)",
+    "risk_score_0_100": "float \u2014 district min\u2013max normalised display score",
+    "habitat_suitability": "float 0\u20131 \u2014 P(elephant presence | features)",
+    "human_exposure": "float 0\u20131 \u2014 people/crops exposure layer",
+    "explanation": "short plain-English label",
+    "why": "one-sentence explanation for UI popup",
+    "tags": "pipe-separated factor tags",
+    "forest_edge": "0/1 flag"
+  },
+  "files": [
+    "colour_breaks.md",
+    "feature_grid_meta.json",
+    "methods_note.md",
+    "risk_cells.geojson",
+    "risk_cells.gpkg",
+    "risk_explanations.json",
+    "risk_grid.csv",
+    "risk_grid.parquet",
+    "risk_map.html",
+    "risk_preview.png",
+    "risk_surface.tif",
+    "study_area.geojson",
+    "validation_summary.md"
+  ],
+  "for_component_3": {
+    "use": "Weight road graph edges by mean or max risk_score of intersecting cells; optionally boost cost under high risk_score_0_100.",
+    "preferred_files": [
+      "risk_grid.parquet",
+      "risk_surface.tif",
+      "risk_cells.gpkg"
+    ]
+  },
+  "for_component_4": {
+    "use": "Show coloured risk layer + popup from explanation/why; HTML preview already in risk_map.html.",
+    "preferred_files": [
+      "risk_cells.geojson",
+      "risk_explanations.json",
+      "risk_map.html",
+      "risk_preview.png"
+    ]
+  },
+  "missing_sources": []
+}

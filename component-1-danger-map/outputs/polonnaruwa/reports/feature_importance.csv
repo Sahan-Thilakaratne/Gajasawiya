@@ -1,0 +1,17 @@
+,importance
+protected,0.21787491
+precip_mm,0.18243688
+temp_c,0.073686
+elevation_m,0.072450295
+dist_settlement_m,0.057089273
+pop_mean,0.043325372
+forest_edge,0.04078746
+frac_shrub_grass,0.0378586
+frac_tree,0.036735743
+dist_water_m,0.036331225
+dist_road_m,0.03629809
+frac_crop,0.035939723
+slope_deg,0.035516933
+frac_water,0.034809705
+pop_density_approx,0.031180637
+frac_built,0.027679157

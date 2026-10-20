@@ -1,0 +1,31 @@
+{
+  "district": "Anuradhapura",
+  "n_train": 2618,
+  "n_presence": 238,
+  "n_background": 2380,
+  "n_grid_cells": 28817,
+  "features": [
+    "frac_tree",
+    "frac_crop",
+    "frac_built",
+    "frac_water",
+    "frac_shrub_grass",
+    "elevation_m",
+    "slope_deg",
+    "temp_c",
+    "precip_mm",
+    "pop_mean",
+    "pop_density_approx",
+    "dist_road_m",
+    "dist_water_m",
+    "dist_settlement_m",
+    "protected",
+    "forest_edge"
+  ],
+  "spatial_block_cells": 20,
+  "cv_mean_auc": 0.8380492043815273,
+  "cv_std_auc": 0.04165231100650697,
+  "oof_auc": 0.847092366358308,
+  "oof_ap": 0.3220043425910459,
+  "risk_formula": "habitat_suitability * human_exposure_normalized"
+}

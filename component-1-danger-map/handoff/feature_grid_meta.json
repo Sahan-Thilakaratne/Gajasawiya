@@ -1,0 +1,36 @@
+{
+  "grid": {
+    "origin_x": 109500.0,
+    "origin_y": 290000.0,
+    "cell_m": 500,
+    "nx": 229,
+    "ny": 245
+  },
+  "n_cells": 28817,
+  "crs": "EPSG:5234",
+  "resolution_m": 500,
+  "columns": [
+    "cell_id",
+    "ix",
+    "iy",
+    "cx",
+    "cy",
+    "frac_tree",
+    "frac_crop",
+    "frac_built",
+    "frac_water",
+    "frac_shrub_grass",
+    "elevation_m",
+    "slope_deg",
+    "temp_c",
+    "precip_mm",
+    "pop_mean",
+    "pop_density_approx",
+    "dist_road_m",
+    "dist_water_m",
+    "dist_settlement_m",
+    "protected",
+    "forest_edge",
+    "human_exposure_raw"
+  ]
+}

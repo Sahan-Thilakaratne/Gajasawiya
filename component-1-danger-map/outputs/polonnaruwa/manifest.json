@@ -1,0 +1,10 @@
+{
+  "district": "Polonnaruwa",
+  "train_mode": "pooled_anuradhapura_plus_polonnaruwa",
+  "n_cells": 13756,
+  "files": {
+    "model": "outputs/polonnaruwa/xgb_habitat_model.joblib",
+    "risk_scores": "outputs/polonnaruwa/maps/risk_scores.parquet",
+    "risk_cells": "outputs/polonnaruwa/maps/risk_cells.geojson"
+  }
+}

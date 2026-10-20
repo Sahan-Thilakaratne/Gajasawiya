@@ -1,0 +1,50 @@
+{
+  "target": "y",
+  "target_meaning": "P(conflict-exposed road corridor) \u2014 proxy label",
+  "label_rule": {
+    "risk_percentile": 85.0,
+    "risk_floor": 0.05,
+    "and_any_of": {
+      "human_exposure_min": 0.2,
+      "dist_settlement_m_max": 2000.0,
+      "forest_edge_min": 0.2,
+      "frac_crop_min": 0.12
+    },
+    "dynamic_nudge": "elephant_circle_overlap & risk_mean>=0.02 \u2192 y=1"
+  },
+  "feature_columns": [
+    "length_m",
+    "risk_mean",
+    "risk_max",
+    "habitat_suitability",
+    "human_exposure",
+    "frac_tree",
+    "frac_crop",
+    "frac_built",
+    "forest_edge",
+    "dist_settlement_m",
+    "dist_water_m",
+    "dist_road_m",
+    "pop_density_approx",
+    "elevation_m",
+    "highway_code",
+    "hour_of_day",
+    "diurnal_activity",
+    "elephant_dist_m",
+    "elephant_circle_overlap"
+  ],
+  "n_rows": 695358,
+  "n_positives": 116105,
+  "n_static_segments": 55358,
+  "honesty": "Labels are research proxies from Comp-1 overlap risk and settlement/farm edge, plus synthetic elephant proximity \u2014 not official crash or DWC incident records.",
+  "files": {
+    "dataset": "segment_dataset.parquet",
+    "static": "segment_features_static.parquet"
+  },
+  "colab": {
+    "model_out": "road_risk_model.joblib",
+    "features_out": "feature_columns.json",
+    "suggested_model": "XGBClassifier or HistGradientBoostingClassifier",
+    "split": "Group by spatial_fold or cell_id \u2014 avoid random i.i.d. leak"
+  }
+}
